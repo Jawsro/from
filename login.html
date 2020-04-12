@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+  	<meta name="save" content="history" />
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/login.css"/>
+    <script src="js/distpicker.data.js"></script>
+    <script src="js/distpicker.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <div class="main">
+         <h1 class="red"> 手机注册</h1>
+        <form class="form-horizontal cont from1" role="form">
+          <!--姓名-->
+            <div class="form-group ">
+                <div class="col-sm-6 col-md-7 col-xs-7 col-lg-7 pl-0 ">
+                   <input type="text" class="fsize lborder" id="name"  placeholder="您的姓名：">
+                </div>
+                <div class="col-sm-6 col-xs-5 col-md-5 col-lg-5 prompt fsize rborder" >
+                  <span>我们会保护您的隐私</span>
+                </div>
+                <div class="fsize danger dangername disnone" >姓名不能为空</div>
+            </div>
+            
+             <!--身份证号-->
+            <div class="form-group">
+              <div class="col-sm-6 col-md-7 col-xs-7 col-lg-7 pl-0 ">
+                    <input type="text" class="fsize lborder" id="idcard"  placeholder="身份证号：">
+              </div>
+              <div class="col-sm-6 col-xs-5 col-md-5 col-lg-5 prompt fsize rborder" >
+                <span>
+                  我们会保护您的隐私
+                </span>
+              </div>
+              <div class="fsize danger dangeridcard disnone" >身份证号不能为空</div>
+            </div>
+
+            <!--手机号码-->
+            <div class="form-group">
+              <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 pl-0">
+                    <input type="text" class="fsize border" id="phone"  placeholder="手机号码：">
+              </div>
+               <div class="fsize danger dangerphone disnone" >手机号码不能为空</div>
+            </div>
+
+             <!--验证码-->
+            <div class="form-group">
+              <div class="col-sm-7 col-md-7 col-xs-6 pl-0 ">
+                    <input type="text" class="fsize border" id=""  placeholder="输验证码：">
+              </div>
+              <div class="col-sm-2 col-md-2 col-xs-2"></div>
+              <div class="col-sm-3 col-md-3 col-xs-4  text fsize pl-0" >
+                <span>
+                  xyza
+                </span>
+              </div>
+            </div>
+
+            <!--设置密码-->
+            <div class="form-group">
+              <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 pl-0">
+                    <input type="text" class="fsize border password" placeholder="设置密码：">
+              </div>
+            </div>
+
+            <!--确认密码-->
+            <div class="form-group">
+              <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 pl-0">
+                    <input type="text" class="fsize border password2"  placeholder="确认密码：">
+              </div>
+              <div class="fsize danger dangerpassword2 disnone" >密码错误</div>
+            </div>
+            <button class="btn btn1 fsize" type="button" id="button">立即注册</button>
+        </form>
+
+        <div class="hr"></div>
+        <h1 class="red"> 完善资料</h1>
+        <form role="form" class="form-horizontal from2">
+
+            <div class="form-group none fsize">
+               <div class="labelbg1">
+                婚史
+               </div>
+                <label class="radio-inline">
+                    <input type="radio"  value="未婚" name="marry" checked><span>未婚</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="离异" name="marry" ><span> 离异 </span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="丧偶" name="marry"><span>丧偶</span>
+                </label>
+            </div>
+
+            <div class="form-group none fsize">
+               <div class="labelbg">
+                生育
+               </div>
+                <label class="radio-inline">
+                    <input type="radio"  value="未生育" name="child" checked><span>未生育</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="有孩子自归自己" name="child" ><span>有孩子自归自己</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="有孩子归对方" name="child"><span>有孩子归对方</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="其他" name="child"><span>其他</span>
+                </label>
+            </div>
+
+           <div class="form-group none fsize">
+               <div class="labelbg">
+                学历
+               </div>
+                <label class="radio-inline">
+                    <input type="radio"  value="高中中专及以下" name="educational"><span>高中中专及以下</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="大专" name="educational" checked><span>大专</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="本科" name="educational"><span>本科</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="硕士" name="educational"><span>硕士</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="博士及以上" name="educational"><span>博士及以上</span>
+                </label>
+            </div>
+
+             <div class="form-group none fsize">
+               <div class="labelbg">
+                月薪
+               </div>
+                <label class="radio-inline">
+                    <input type="radio"  value="2千及以下" name="money"><span>2千及以下</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="2千到5千" name="money" checked><span>2千到5千</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="5千到1万" name="money"><span>5千到1万</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="1万到2万" name="mobey"><span>1万到2万</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="2万以上" name="mobey"><span>2万以上</span>
+                </label>
+            </div>
+
+           
+            <div class="form-group">
+                <div for="work" class="col-sm-3 col-xs-3 col-md-3 control-label labelbg2 fsize ">
+                    职业
+                </div>
+                 <div class="col-sm-9 col-md-9 col-xs-9">
+                    <select name="work" id="work" class=" fsize" data-edit-select="1" onmousedown="if(this.options.length>3){this.size=5}" onblur="this.size=0" onchange="this.size=0" style="position:absolute;z-index:999; width:88%">
+                        <option>请选择</option>
+                        <option>职业1</option>
+                        <option>职业2</option>
+                      	<option>职业3</option>
+                        <option>职业4</option>
+                      	<option>职业5</option>
+                      	<option>职业6</option>
+                      	<option>职业7</option>
+                      	<option>职业8</option>
+                      	<option>职业9</option>
+                    </select>
+                 </div>   
+            </div>
+           
+            <div class="form-group">
+                <label for="height1" class="col-sm-3 col-xs-3 col-md-3 control-label labelbg2 fsize">
+                    身高
+                </label>
+                <div class="col-sm-9 col-md-9 col-xs-9">
+                    <select name="height1" id="height1" class="fsize" data-edit-select="1" onmousedown="if(this.options.length>3){this.size=5}" onblur="this.size=0" onchange="this.size=0" style="position:absolute;z-index:99; width:88%">
+                        <option>请选择</option>
+                        <option>160</option>
+                        <option>165</option>
+                      	<option>168</option>
+                        <option>170</option>
+                      	<option>171</option>
+                      	<option>172</option>
+                      	<option>175</option>
+                      	<option>178</option>
+                      	<option>180</option>
+                    </select>
+                </div>
+                <div style="height:34px;line-height:34px" class="fsize">厘米</div>
+            </div>
+
+            <div class="form-group">
+                <label  class="col-sm-2 col-xs-2 col-md-2 col-lg-2 control-label labelbg2 fsize">
+                    故乡
+                </label>
+                <div id="distpicker" class="col-md-10 ol-sm-10 col-xs-10 col-lg-10 fsize">
+                  <select data-province="---- 所在省 ----" style="height:34px;" id="ddf" class="fsize col-md-4 col-sm-8 col-xs-7 col-lg-4  "></select>
+                  <select data-city="---- 所在市 ----" style="height:34px;" id="dds" class="fsize col-md-4 col-sm-8 col-xs-7 col-lg-4"></select>
+                  <select data-district="---- 所在区 ----" style="height:34px;" id="ddc" class="fsize col-md-4 col-sm-8 col-xs-7 col-lg-4"></select>
+                </div>
+            </div>
+             <div class="form-group">
+                <label  class="col-sm-3 col-xs-3 col-md-3 control-label labelbg2 fsize">
+                    现居
+                </label>
+                <div id="distpicker2" class="col-md-10 ol-sm-10 col-xs-10 fsize">
+                  <select data-province="---- 所在省 ----" style="height:34px;" id="ddf1" class="fsize col-md-4 col-sm-8 col-xs-7 col-lg-4"></select>
+                  <select data-city="---- 所在市 ----" style="height:34px;" id="dds1" class="fsize col-md-4 col-sm-8 col-xs-7 col-lg-4"></select>
+                  <select data-district="---- 所在区 ----" style="height:34px;" id="ddc1" class="fsize col-md-4 col-sm-8 col-xs-7 col-lg-4"></select>
+                </div>
+            </div>
+
+            <div class="form-group none fsize">
+               <div class="labelbg1">
+                性格
+               </div>
+                <label class="radio-inline">
+                    <input type="radio"  value="内向" name="xg"><span>内向</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="文静" name="xg" ><span>文静</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="洒脱" name="xg"><span>洒脱</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="外向" name="xg"><span>外向</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="活泼" name="xg" checked><span>活泼</span>
+                </label>
+            </div>
+
+             <div class="form-group none fsize">
+               <div class="labelbg1">
+                长相
+               </div>
+                <label class="radio-inline">
+                    <input type="radio"  value="端正" name="face" ><span>端正</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="英俊" name="face" ><span>英俊</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="精致" name="face"><span>精致</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="漂亮" name="face" checked><span>漂亮</span>
+                </label>
+            </div>
+
+            <div class="form-group none fsize">
+               <div class="labelbg1">
+                身材
+               </div>
+                <label class="radio-inline">
+                    <input type="radio"  value="健壮" name="sc" ><span>健壮</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="均匀" name="sc" ><span>均匀</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="苗条" name="sc"><span>苗条</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="性感" name="sc"><span>性感</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="丰满" name="sc" checked><span>丰满</span>
+                </label>
+            </div>
+            <div class="form-group none fsize">
+               <div class="labelbg3" >
+                居住情况
+               </div>
+                <label class="radio-inline">
+                    <input type="radio"  value="独居" name="home" checked><span>独居</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="合租" name="home" ><span>合租</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="住校" name="home"><span>住校</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="住家" name="home"><span>住家</span>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="其他" name="home"><span>其他</span>
+                </label>
+            </div>
+            
+           
+            <button class="btn btn1" type="button" id="button2">立即注册</button>
+        </form>
+        
+    </div>
+    <script>
+        $(function(){
+            $("#distpicker").distpicker({
+            //   province: "---- 所在省 ----",
+            //   city: "---- 所在市 ----",
+            //   district: "---- 所在区 ----",
+              province: "浙江省",
+              city: "杭州市",
+              district: "西湖区"
+            });
+            $("#distpicker2").distpicker({
+                province: "---- 所在省 ----",
+                city: "---- 所在市 ----",
+                district: "---- 所在区 ----"
+            });
+        })
+    </script>
+</body>
+</html>
